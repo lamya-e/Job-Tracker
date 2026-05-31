@@ -3,7 +3,7 @@ const path = require("path");
 
 const db = new Database(path.join(__dirname, "jobs.db"));
 
-// create the jobs table if it doesn't exist
+
 db.exec(`
   CREATE TABLE IF NOT EXISTS jobs (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
